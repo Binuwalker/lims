@@ -1,0 +1,178 @@
+@import "values";
+
+/* Appoinment Datatable */
+
+.appointment-datatable {
+  .search-input {
+    input {
+      height: 30px;
+      width: 200px;
+      outline: none;
+      border: 1px solid gray;
+    }
+    .search-icon {
+      height: 48px;
+      width: 48px;
+      color: $ternary-color;
+      box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.204);
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .search-icon:hover {
+      background-color: #4b4b4b22;
+      transition: 0.3s;
+    }
+  }
+
+  .update-many {
+    height: 48px;
+    width: 48px;
+    color: $ternary-color;
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.204);
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  .update-many:hover {
+    background-color: #4b4b4b22;
+    transition: 0.3s;
+  }
+  .datatable-container {
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.108);
+
+    .status-container {
+      padding: 5px 10px;
+      border-radius: 50px;
+      box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.157);
+      cursor: pointer;
+
+      &.confirmed {
+        color: #4b4b4b;
+        font-weight: 600;
+        .status-indication {
+          height: 8px;
+          width: 8px;
+          border-radius: 100%;
+          background-color: rgb(13, 255, 0);
+          box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.264);
+        }
+      }
+      &.completed {
+        color: #4b4b4b;
+        font-weight: 600;
+        .status-indication {
+          height: 8px;
+          width: 8px;
+          border-radius: 100%;
+          background-color: rgb(0, 234, 255);
+          box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.264);
+        }
+      }
+      &.no-show {
+        color: #4b4b4b;
+        font-weight: 600;
+        .status-indication {
+          height: 8px;
+          width: 8px;
+          border-radius: 100%;
+          background-color: rgb(255, 0, 0);
+          box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.264);
+        }
+      }
+    }
+  }
+}
+
+:where(.css-dev-only-do-not-override-1vr7spz).ant-picker-dropdown {
+  z-index: 1055 !important;
+}
+
+// .modal-container {
+  .ReactModal__Overlay {
+    background-color: rgba(0, 0, 0, 0.23) !important;
+  }
+.ReactModal__Content {
+  padding: 40px !important;
+  width: 550px !important;
+  border-radius: 50px !important;
+  box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.169);
+}
+
+.date-inputs {
+  .select-input {
+    width: 48.5%;
+    padding: 17.5px;
+    outline: none;
+    border: 1px solid #000 !important;
+  }
+
+  .react-datepicker-wrapper {
+    width: -webkit-fill-available;
+  }
+
+  .input {
+    width: -webkit-fill-available;
+    padding: 15px;
+    outline: none;
+    border: 1px solid #000 !important;
+  }
+
+  .input-disabled {
+    border-color: #d9d9d9 !important;
+  }
+
+  :where(.css-dev-only-do-not-override-1vr7spz).ant-picker {
+    width: -webkit-fill-available;
+    margin-top: 20px;
+    padding: 15px;
+    outline: none;
+    border-radius: 0;
+    border: 1px solid #000 !important;
+    color: #000 !important;
+    box-shadow: none !important;
+  }
+  :where(.css-dev-only-do-not-override-1vr7spz).ant-picker
+    .ant-picker-input
+    > input:focus,
+  :where(.css-dev-only-do-not-override-1vr7spz).ant-picker
+    .ant-picker-input
+    > input-focused {
+    border-color: #000 !important;
+  }
+  :where(.css-dev-only-do-not-override-1vr7spz).ant-picker.ant-picker-disabled {
+    border-color: #d9d9d9 !important;
+  }
+  .save-btn {
+    height: 50px;
+    width: -webkit-fill-available;
+    background-color: $ternary-color;
+    border: 3px solid transparent;
+    font-weight: 600;
+    transition: 0.3s;
+  }
+  .save-btn:hover {
+    background-color: transparent;
+    border: 3px solid $ternary-color;
+    transition: 0.3s;
+  }
+  .save-btn-disabled {
+    height: 50px;
+    width: -webkit-fill-available;
+    background-color: #15f0cb81;
+    border: 3px solid transparent;
+    font-weight: 600;
+    transition: 0.3s;
+  }
+  .clear-btn {
+    height: 50px;
+    width: -webkit-fill-available;
+    background-color: transparent;
+    border: 3px solid $ternary-color;
+    font-weight: 600;
+    transition: 0.3s;
+  }
+  .clear-btn:hover {
+    background-color: rgba(128, 128, 128, 0.215);
+    transition: 0.3s;
+  }
+}
+// }

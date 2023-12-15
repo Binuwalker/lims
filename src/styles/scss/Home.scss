@@ -1,0 +1,305 @@
+@import "values";
+
+/* Home */
+
+/* test-banner-container */
+
+.test-banner-container {
+  display: flex;
+  height: 700px;
+  justify-content: flex-end;
+
+  .shape {
+    position: absolute;
+    background-image: url("../../assets/imgs/home/testing_banner.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: morph 8s ease-in-out infinite;
+    border-radius: 19% 81% 0% 100% / 29% 0% 100% 71%;
+    height: 700px;
+    transition: all 1s ease-in-out;
+    width: 800px;
+  }
+
+    @keyframes morph {
+      0% {
+        border-radius: 19% 81% 0% 100% / 29% 0% 100% 71%;
+      }
+
+      50% {
+        border-radius: 28% 72% 0% 100% / 43% 0% 100% 57%;
+      }
+
+      100% {
+        border-radius: 19% 81% 0% 100% / 29% 0% 100% 71%;
+      }
+    }
+}
+
+/* test-banner */
+
+.test-banner {
+  height: 700px;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  font-family: $spinnaker;
+
+  .heading {
+    width: 50%;
+    font-family: $spinnaker;
+  }
+
+  .content {
+    width: 60%;
+  }
+
+  .ic-test-tube {
+    height: 70px;
+    width: 70px;
+    color: #ffffff;
+    background-color: $ternary-color;
+    border-radius: 100%;
+  }
+  .ic-stethoscope {
+    height: 70px;
+    width: 70px;
+    color: #ffffff;
+    background-color: $ternary-color;
+    border-radius: 100%;
+  }
+  .ic-brieftcase-medical {
+    height: 70px;
+    width: 70px;
+    color: #ffffff;
+    background-color: $ternary-color;
+    border-radius: 100%;
+  }
+}
+
+/* details-card */
+
+.details-card {
+  height: 300px;
+  width: -webkit-fill-available;
+  display: flex;
+  align-items: center;
+
+  .details-card-position {
+    position: relative;
+    width: -webkit-fill-available;
+    bottom: 60px;
+    z-index: 5;
+    .card {
+      height: 300px;
+      width: 33.33333333333333%;
+      background-color: $ternary-color-light;
+      border-radius: 10px;
+      box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.057);
+    }
+
+    .card-max {
+      height: 320px;
+      width: 33.33333333333333%;
+      background-color: #b4f6eb;
+      border-radius: 10px;
+      box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.057);
+      z-index: 3;
+    }
+    .custom-font {
+      color: rgb(48, 48, 48);
+      font-size: 0.9rem;
+    }
+    .card-btn {
+      height: 50px;
+      padding-left: 20px;
+      padding-right: 20px;
+      background-color: #ffffff;
+      border: 3px solid #10e5c100;
+      box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.099);
+      border-radius: 50px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .card-btn:hover {
+      background: transparent;
+      border: 3px solid #10e5c2;
+      transition: 0.3s;
+    }
+  }
+}
+
+/* our-employees-container */
+
+.our-employees-container {
+  height: 600px;
+  width: -webkit-fill-available;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  position: absolute;
+
+  .shape-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+    right: -100px;
+    top: 100px;
+    .shape-1 {
+      height: 550px;
+      width: 600px;
+      position: absolute;
+      background-color: #7ffae557;
+      animation: morph1 8s ease-in-out infinite;
+      border-radius: 45% 55% 75% 25% / 50% 31% 69% 50%;
+    }
+
+    .shape-2 {
+      height: 600px;
+      width: 650px;
+      position: relative;
+      background-color: #95f5e554;
+      animation: morph2 8s ease-in-out infinite;
+      border-radius: 45% 55% 37% 63% / 37% 24% 76% 63%;
+    }
+
+    @keyframes morph1 {
+        0% {
+          border-radius: 45% 55% 75% 25% / 50% 31% 69% 50%;
+        }
+  
+        50% {
+          border-radius: 53% 57% 53% 36% / 39% 49% 34% 46%;
+        }
+  
+        100% {
+          border-radius: 45% 55% 75% 25% / 50% 31% 69% 50%;
+        }
+      }
+    @keyframes morph2 {
+        0% {
+          border-radius: 45% 55% 37% 63% / 37% 24% 76% 63%;
+        }
+  
+        50% {
+          border-radius: 30% 57% 70% 36% / 31% 56% 34% 45% ;
+        }
+  
+        100% {
+          border-radius: 45% 55% 37% 63% / 37% 24% 76% 63%;
+        }
+      }
+
+  }
+}
+
+/* our-employees */
+
+.our-employees {
+    height: 650px;
+    width: -webkit-fill-available;
+    .content {
+        z-index: 0;
+        button {
+            height: 50px;
+            width: 150px;
+            padding-left: 20px;
+            padding-right: 20px;
+            background-color: $ternary-color;
+            border: 3px solid #10e5c100;
+            box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.099);
+            border-radius: 50px;
+            transition: 0.3s;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: transparent;
+            border: 3px solid $ternary-color;
+            transition: 0.3s;
+        }
+    }
+    .img {
+        float: right;
+        position: relative;
+        bottom: -48px;
+        z-index: 5;
+        img {
+            height: 500px;
+            width: 700px;
+        }
+    }
+}
+
+/* why-choose */
+
+.why-choose {
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    .ic {
+        color: #10e5c2;
+        stroke: #10e5c2 !important;
+    }
+    
+    .content {
+        color: #0000007c;
+    }
+
+}
+
+/* make-appointment */
+
+.make-appointment {
+    padding: 20px;
+
+    .img {
+        img {
+            height: 500px;
+            border-radius:68% 32% 65% 35% / 51% 59% 41% 49% ;
+        }
+        .shape {
+            height: 500px;
+            width:750px;
+            position: absolute;
+            background-color: #10e5c130;
+            border-radius: 27% 73% 53% 47% / 67% 73% 27% 33% ;
+        }
+    }
+
+    .form {
+        .heading {
+            font-size: 28px;
+        }
+        form {
+            input {
+                width: -webkit-fill-available;
+                margin-top: 20px;
+                padding: 15px;
+                border: none;
+                border-bottom: 1px solid rgba(0, 0, 0, 0.499);
+                outline: none;
+            }
+            button {
+                height: 50px;
+                width: 150px;
+                margin-top: 20px;
+                padding-left: 20px;
+                padding-right: 20px;
+                background-color: $ternary-color;
+                border: 3px solid #10e5c100;
+                box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.099);
+                border-radius: 50px;
+                transition: 0.3s;
+                cursor: pointer;
+            }
+            button:hover {
+                background-color: transparent;
+                border: 3px solid $ternary-color;
+                transition: 0.3s;
+            }
+        }
+    }
+}

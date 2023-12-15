@@ -1,0 +1,150 @@
+@import "values";
+
+/* Plugin */
+
+/* horizontal-ine */
+
+.horizontal-line {
+  background-color: #1c1b1b;
+  .line {
+    height: 1.5px;
+    width: 100%;
+    background-color: rgba(128, 128, 128, 0.415);
+  }
+}
+
+/* top-scroller */
+
+.top-scroller {
+  height: 60px;
+  width: 60px;
+  visibility: hidden;
+  position: sticky;
+  bottom: -40px;
+  color: $ternary-color;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 50%;
+  font-size: 24px;
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: bottom 0.5s ease;
+  &.visible {
+    visibility: visible;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    transition: 0.3s;
+    z-index: 5;
+  }
+}
+.top-scroller:hover {
+  color: #000;
+  background-color: #dedede;
+  transition: 0.3s;
+}
+
+/* skeleton-loader */
+
+.skeleton-loader {
+  margin-bottom: 25px;
+  background-color: rgba(235, 234, 234, 0.409);
+  border-radius: 5px;
+  animation: loading 1s infinite;
+}
+
+.skeleton-img {
+  width: 100%;
+  height: 400px;
+  background-color: #cfcfcf;
+  margin-bottom: 10px;
+}
+
+.skeleton-contents-container {
+  padding: 20px;
+  .skeleton-heading {
+    width: 100%;
+    height: 25px;
+    margin-bottom: 10px;
+    background-color: #cfcfcf;
+  }
+  .skeleton-content {
+    width: 100%;
+    height: 15px;
+    background-color: #cfcfcf;
+    margin-bottom: 10px;
+  }
+}
+
+@keyframes loading {
+  0% {
+    opacity: 0.7;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.7;
+  }
+}
+
+/* page-loader */
+
+.page-loader {
+  border: 4px solid rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+  border-top: 4px solid $primary-color;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes spin {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+/* slide-loader */
+
+.slide-loader {
+  height: 10px; 
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.slide-container {
+  width: 30%;
+  height: 10px;
+  position: relative;
+  background-color: #ccc; 
+  border-radius: 50px;
+  overflow: hidden;
+}
+.slide-loader-bar {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: $primary-color; 
+  border-radius: 50px;
+  animation: slide 2s linear infinite;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}

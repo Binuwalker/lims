@@ -1,0 +1,195 @@
+@import "values";
+
+/* Booking */
+
+/* booking-banner */
+
+.booking-banner {
+  height: 700px;
+  background-image: url("../../assets/imgs/booking/booking_banner.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+
+  .booking-banner-bg {
+    height: 700px;
+    background-image: linear-gradient(to right, #0d796712, black);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    .content {
+      width: 45%;
+      .heading {
+        color: $ternary-color;
+      }
+      .btn {
+        button {
+          height: 50px;
+          width: 150px;
+          margin-top: 20px;
+          padding-left: 20px;
+          padding-right: 20px;
+          background-color: $ternary-color;
+          border: 3px solid #10e5c100;
+          box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.099);
+          border-radius: 10px;
+          transition: 0.3s;
+          cursor: pointer;
+        }
+        button:hover {
+          color: $ternary-color;
+          background-color: transparent;
+          border: 3px solid $ternary-color;
+          transition: 0.3s;
+        }
+      }
+    }
+  }
+}
+
+/* booking-form */
+
+.booking-form {
+  height: 550px;
+  width: -webkit-fill-available;
+  .booking-form-container {
+    width: -webkit-fill-available;
+    position: absolute;
+    top: 450px;
+    .form {
+      background-color: green;
+      width: 50%;
+
+      form {
+        width: -webkit-fill-available;
+        padding: 30px;
+        background-color: #ffffff;
+        box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.211);
+
+        .heading {
+          font-size: 28px;
+        }
+
+        .name-inputs {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 20px;
+        }
+        .input {
+          width: -webkit-fill-available;
+          margin-top: 20px;
+          padding: 15px;
+          outline: none;
+        }
+        .date-inputs {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          gap: 20px;
+        }
+        :where(.css-dev-only-do-not-override-1vr7spz).ant-picker {
+          width: -webkit-fill-available;
+          margin-top: 20px;
+          padding: 15px;
+          outline: none;
+          border-radius: 0;
+          border: 1px solid #000 !important;
+          color: #000 !important;
+          box-shadow: none !important;
+        }
+        :where(.css-dev-only-do-not-override-1vr7spz).ant-picker
+          .ant-picker-input
+          > input:focus,
+        :where(.css-dev-only-do-not-override-1vr7spz).ant-picker
+          .ant-picker-input
+          > input-focused {
+          border-color: #000 !important;
+        }
+        .btn {
+          height: 50px;
+          width: -webkit-fill-available;
+          margin-top: 20px;
+          padding-left: 20px;
+          padding-right: 20px;
+          background-color: $ternary-color;
+          border: 3px solid #10e5c100;
+          box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.099);
+          border-radius: 10px;
+          transition: 0.3s;
+          cursor: pointer;
+        }
+        .btn:hover {
+          background-color: transparent;
+          border: 3px solid $ternary-color;
+          transition: 0.3s;
+        }
+      }
+    }
+    .container-2 {
+      padding: 20px;
+      position: relative;
+      bottom: -100px;
+      .heading {
+        color: $ternary-color;
+      }
+    }
+    .form-banner {
+      position: relative;
+      bottom: -100px;
+      .img {
+        img {
+          height: 300px;
+          width: 400px;
+          border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+        }
+      }
+      .shape-1 {
+        height: 300px;
+        width: 400px;
+        position: absolute;
+        top: 0;
+        animation: morph_booking1 8s ease-in-out infinite;
+        background-color: #7ffae58a;
+        border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+      }
+      .shape-2 {
+        height: 300px;
+        width: 400px;
+        position: absolute;
+        top: 0;
+        animation: morph_booking2 8s ease-in-out infinite;
+        background-color: #0e615354;
+        border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+      }
+      @keyframes morph_booking1 {
+        0% {
+          transform: rotate(0deg);
+        }
+
+        50% {
+          transform: rotate(45deg);
+        }
+
+        100% {
+          transform: rotate(0deg);
+        }
+      }
+      @keyframes morph_booking2 {
+        0% {
+          transform: rotate(0deg);
+        }
+
+        50% {
+          transform: rotate(-45deg);
+        }
+
+        100% {
+          transform: rotate(0deg);
+        }
+      }
+    }
+  }
+}
